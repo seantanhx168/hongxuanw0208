@@ -1,4 +1,13 @@
 <?php
+
+function my_autoload($classname) {
+
+    include $class. '.php';
+}
+
+spl_autoload_register("autoloader");
+
+
 include "Animal.php";
 include "Rabbit.php";
 include "Tortoise.php";
